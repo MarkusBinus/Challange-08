@@ -1,0 +1,69 @@
+.board {
+    width: 92px;
+    height: 20px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8a8a8a;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.pass {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    position: absolute;
+    left: 315px;
+    top: 102px;
+    width: 146px;
+    height: 18px;
+}
+
+.fig {
+    width: 59px;
+    height: 18px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #222;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.tree {
+    position: absolute;
+    width: 105px;
+    height: 30px;
+    left: 315px;
+    top: 147px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+}
+
+.graphy {
+    width: 63px;
+    height: 18px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+

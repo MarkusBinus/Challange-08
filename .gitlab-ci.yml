@@ -1,0 +1,66 @@
+stages:
+  - build
+  - test
+  - deploy
+
+image: node:lts
+
+before_script:
+  - apt-get update -qy
+  - apt-get install -y ruby-dev
+  - gem install dpl
+
+cache:
+  paths:
+    - node_modules/
+
+.template job: &script_build
+  script:
+    - yarn install
+    - yarn build
+
+.template job: &script_test
+  script:
+    - yarn install
+    - yarn test
+
+.template job: &script_netlify
+  script:
+    - yarn global add netlify-cli
+    - netlify deploy --dir=build --prod
+
+build job:
+  stage: build
+  <<: *script_build
+  artifacts:
+    paths:
+      - build/
+
+test artifacts:
+  stage: test
+  script:
+    - test -f build/robots.txt
+
+test job:
+  stage: test
+  <<: *script_test
+
+deploy production:
+  stage: deploy
+  script:
+    - gem install faraday -v 1.10.0
+    - dpl --provider=heroku --app=$HEROKU_APP_PRODUCTION --api-key=$HEROKU_API_KEY
+  environment:
+    name: main
+    url: https://challenge08-main.herokuapp.com/
+  only:
+    - main
+
+deploy staging:
+  stage: deploy 
+  environment:
+    name: staging
+    url: https://richardgerry-challenge08.netlify.app
+  only:
+    - staging
+  <<: *script_netlify

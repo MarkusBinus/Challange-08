@@ -1,0 +1,275 @@
+.sidebar {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    bottom: 0%;
+    right: 75.86%;
+    background: #0d28a6;
+    width: 70px;
+    height: 902px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 18px;
+    top: 18px;
+    background: #cfd4ed;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 70px;
+    height: 128px;
+    left: 0px;
+    top: 70px;
+}
+
+.home {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 23px;
+    gap: 2px;
+    width: 70px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.3);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.fihome {
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    left: 23px;
+    color: #fff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.tex {
+    width: 63px;
+    height: 18px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    top: 36px;
+    left: 3.5px;
+    text-decoration: none;
+}
+
+.truck {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 23px;
+    gap: 2px;
+    width: 70px;
+    height: 64px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.fitruck {
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    left: 23px;
+    color: #fff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.test {
+    width: 26px;
+    height: 18px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    top: 36px;
+    left: 22px;
+    text-decoration: none;
+}
+
+.navbar {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1370px;
+    height: 70px;
+    top: 0px;
+    left: 70px;
+    background: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.retangle {
+    position: absolute;
+    width: 100px;
+    height: 34px;
+    left: 24px;
+    top: 18px;
+    background: #cfd4ed;
+}
+
+.fimenu {
+    position: absolute;
+    left: 244px;
+    top: 23px;
+    width: 24px;
+    height: 24px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 245px;
+    height: 36px;
+    left: 934px;
+    top: 17px;
+}
+
+.input {
+    box-sizing: border-box;
+    border: 1px solid #d0d0d0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 174px;
+    height: 36px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.inputfield {
+    align-items: center;
+    padding: 9px 12px;
+    background: #fff;
+    border-radius: 2px;
+    align-self: stretch;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8a8a8a;
+    top: 9px;
+    left: 38px;
+    border: none;
+}
+
+.inputfield:focus-visible {
+    outline: none;
+}
+
+.fisearch {
+    width: 18px;
+    height: 18px;   
+    top: 9px;
+    left: 12px;
+    
+}
+
+.button {
+    left: 174px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 71px;
+    height: 36px;
+    background: #fff;
+    border: 1px solid #0d28a6;
+    border-radius: 2px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0d28a6;
+}
+
+.frames {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 143px;
+    height: 38px;
+    left: 1203px;
+    top: 16px;
+}
+
+.email {
+    width: 65px;
+    height: 20px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #151515;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    top: 9px;
+    left: 46px;
+}
+
+.chevron {
+    width: 24px;
+    height: 24px;
+    top: 7px;
+    left: 119px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
